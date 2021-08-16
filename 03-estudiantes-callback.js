@@ -59,3 +59,4 @@ const ESTUDIANTES =
 obtenerEstudiante(1000018690, (estudiante)=>{
     console.log(estudiante.nombre, estudiante.apellidos, estudiante.id);
 })
+obtenerEstudianteNormal(1000018690)
