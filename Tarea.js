@@ -23,7 +23,10 @@ const ESTUDIANTES =
     {id:"10112211", nombre:"Limari", apellido:"lumberg", edad:"18", semestre:"4",valorSemetre:"1500000", nitUniversidad:"62342"},
     {id:"22335511", nombre:"Paco", apellido:"paquito", edad:"25", semestre:"12",valorSemetre:"1700000", nitUniversidad:"52341"}
 ]
-
+/**
+ * Imprime en consola los 5 estudiantes que mas pagaron.
+ * @author Jean Marco Pedraza Zapata
+ */
 const BuscarEstudiantes = async () =>
 {
     return new Promise((resolve, reject) =>
@@ -49,7 +52,10 @@ const BuscarEstudiantes = async () =>
         response.forEach(element => console.log("Identificación: "+element.id+" nombre: "+element.nombre+" apellidos: "+element.apellido));
     })
 }
-
+/**
+ * Imprime en consola el nombre de las universidades y el promedio del costo de semestre de sus estudiantes
+ * @author Jean Marco Pedraza Zapata
+ */
 const ImprimirUniversidades = async () =>
 {
     return new Promise((resolve, reject) => 
@@ -100,7 +106,10 @@ const ImprimirUniversidades = async () =>
         });
     })
 }
-
+/**
+ * Imprime los estudiantes que sean menores de edad.
+ * @author Jean Marco Pedraza Zapata
+ */
 const MenoresEdad = () =>{
     console.log("Estudiantes menores de edad:")
     ESTUDIANTES.forEach(element => {
